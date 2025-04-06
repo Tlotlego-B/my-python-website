@@ -1,0 +1,17 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }} | Portfolio</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+<body>
+    <div class="box">
+        <h1>{{ name }}</h1>
+        <p><strong>Cell:<strong> {{ phone }}</p>
+        <P><strong>Email:</strong> <a href="mailto:{{ email }}"</a></p>
+    </div>
+</body>
+</html>
